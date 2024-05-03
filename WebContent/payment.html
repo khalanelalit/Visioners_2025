@@ -1,0 +1,102 @@
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Payment</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css" rel="styleshee
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Payment Options</h2>
+                    </div>
+                     <form action="pay" method="post" >
+                    <div class="card-body">
+                    
+                        <!-- Payment methods -->
+                        <div class="mb-4">
+                            <h3>Select Payment Method</h3>
+                            <hr>
+                            <h4>UPI</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment_method" id="upi" value="upi">
+                                <label class="form-check-label" for="upi">
+                                    <img height="100" src="https://m.economictimes.com/thumb/msid-74960608,width-1200,height-900,resizemode-4,imgsize-49172/upi-twitter.jpg" alt="UPI" class="img-fluid payment-image">
+                                </label>
+                            </div>
+                            <h4>Credit Card</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment_method" id="credit_card" value="credit_card">
+                                <label class="form-check-label" for="credit_card">
+                                    <img height="100" src="https://thumbs.dreamstime.com/b/credit-cards-choice-conceptual-image-popular-issuers-visa-mastercard-36043490.jpg" alt="Credit Card" class="img-fluid payment-image">
+                                </label>
+                            </div>
+                          <h4>Debit Card</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment_method" id="debit_card" value="debit_card">
+                                <label class="form-check-label" for="debit_card">
+                                    <img height="100" src="https://paytmblogcdn.paytm.com/wp-content/uploads/2022/01/row200_ATM_What-are-the-Types-of-ATM-Cards.png" alt="Debit Card" class="img-fluid payment-image">
+                                </label>
+                                <br>
+                                <hr>
+                                <h2> UPI Payment</h2>
+                                 <br>
+                                  <br>
+                                 <label for="card_number">UPI ID:</label>
+					        <input type="text" id="card_number" name="UPI" placeholder="UPI ID" required>
+					        <br>
+					        <br>
+					         <hr>
+                                  <br>
+                                   <h2>card Payment</h2>
+                                 <br>
+                                 <label for="card_number">Card Number:</label>
+					        <input type="text" id="card_number" name="card_number" placeholder="1234 5678 9012 3456" required>
+					        <br>
+					        <br>
+					
+					        <label for="card_holder">Cardholder Name:</label>
+					        <input type="text" id="card_holder" name="card_holder" placeholder="John Doe" required>
+					        <br>
+					         <br>
+					
+					        <label for="expiry_date">Expiration Date:</label>
+					        <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YY" required>
+					        <br>
+					         <br>
+					
+					        <label for="cvv">CVV:</label>
+					        <input type="text" id="cvv" name="cvv" placeholder="123" required>
+					        <br>
+					         <br>
+					
+					        <label for="amount">Amount:</label>
+					        <input type="text" id="amount" name="amount" placeholder="100.00" required>
+					        <br>
+					         <br>
+					                                
+					                            </div>
+                        </div>
+                        <br>
+                         <br>
+                        
+                        <!-- Payment form fields (e.g., card details, UPI ID) would go here -->
+                        
+                        <!-- Submit button -->
+                          <div class="send_bt">
+								<button type="submit">Proceed To Payment</button>
+							</div>
+							</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
